@@ -15,8 +15,7 @@ class BankAccount:
             self.__balance -= amount                        
             return self.__balance            
         else:            
-            return None
-            
+            return None            
 
     def get_balance(self):
         return self.__balance
@@ -39,8 +38,7 @@ while True:
             print("Poucinam paluszki ;P ")
             print("---")
         else:
-            print(f"Saldo po wypłacie wynosi: {new_account} ")
-            
+            print(f"Saldo po wypłacie wynosi: {new_account} ")            
 
     elif menu_amount == "wplata":
         input_amount = input("Podaj kwotę wpłaty : ")
@@ -53,5 +51,5 @@ while True:
             print(f"Saldo po wpłacie: {new_account}")
 
     else: 
-        print("Halo, halo co tu się odpierdziela?")
+        print("Halo, halo co tu się dzieje?")
         break
