@@ -19,6 +19,13 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
+    
+def get_float_input(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Błąd: podaj cyfrę")
 
 account = BankAccount("Jan Nowak", 1000)
 
@@ -28,9 +35,8 @@ while True:
     if menu_amount == "wyjscie" :
         break
 
-    elif menu_amount == "wyplata" :
-        input_amount = input(f"Podaj kwotę wypłaty, mniejszą niż saldo( {account.get_balance()} ): ")
-        output_amount = float(input_amount)        
+    elif menu_amount == "wyplata" :        
+        output_amount = get_float_input(f"Podaj kwotę wypłaty, mniejszą niż saldo( {account.get_balance()} ): ")       
         new_account = account.withdraw(output_amount)
         
         if new_account is None:
@@ -40,9 +46,8 @@ while True:
         else:
             print(f"Saldo po wypłacie wynosi: {new_account} ")            
 
-    elif menu_amount == "wplata":
-        input_amount = input("Podaj kwotę wpłaty : ")
-        output_amount = float(input_amount)
+    elif menu_amount == "wplata":        
+        output_amount = get_float_input("Podaj kwotę wpłaty : ")
         new_account = account.deposit(output_amount)
 
         if new_account is None:
