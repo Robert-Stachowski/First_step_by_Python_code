@@ -1,9 +1,11 @@
 # InputBankAccount.py
 
 Opis projektu:  
+
 Ten skrypt to moja pierwsza implementacja klasy BankAccount w Pythonie. Program umożliwia użytkownikowi wprowadzanie danych z klawiatury (input), wykonywanie operacji wpłaty i wypłaty oraz sprawdzanie aktualnego salda.
 
-To jedno z moich pierwszych zadań w ramach mentoringu, mające na celu praktyczne zastosowanie programowania obiektowego (OOP).
+To jedno z moich pierwszych "większych" zadań w ramach mentoringu, mające na celu praktyczne zastosowanie programowania obiektowego (OOP). Bazowy plik nie zawierał żadnych inputów ani interakcji z użytkownikiem – ta część została dodana jako moja własna inwencja twórcza. Dodatkowo wprowadziłem podstawową obsługę błędów, która zapobiega wpisywaniu nieprawidłowych danych (np. liter zamiast liczb).
+
 
 ---
 
@@ -14,6 +16,7 @@ Czego się tutaj uczę:
 - Użycia pętli while do interakcji z użytkownikiem
 - Obsługi danych wejściowych z klawiatury
 - Warunków if/else
+- Obsługi błędów i niepoprawnych danych
 - Podstaw dobrej struktury kodu
 
 ---
@@ -32,13 +35,13 @@ Zawartość pliku:
 - deposit(self, amount) – metoda do wpłacania środków
 - withdraw(self, amount) – metoda do wypłacania środków z uwzględnieniem limitów
 - while True: – pętla pobierająca dane od użytkownika
-- Warunki i obsługa błędów
+- Warunki i obsługa błędów (np. ValueError)
 
 ---
 
 Dodatkowo:
 
-Ten plik powstał jako część mojego rozwoju w ramach nauki Pythona od podstaw. Początkowo był użyty również w pull requeście do repozytorium mentora. Tutaj został uporządkowany jako element osobistego portfolio.
+Ten plik powstał jako część mojego rozwoju w ramach nauki Pythona od podstaw. Początkowo był użyty również w pull requeście do repozytorium mentora. Tutaj został uporządkowany jako element osobistego portfolio i wzbogacony o własne rozszerzenia.
 
 ---
 
